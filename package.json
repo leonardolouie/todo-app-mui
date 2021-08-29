@@ -62,21 +62,6 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.25.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
     "prettier": "2.3.2"
-  }, 
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --check",
-      "prettier --write",
-      "eslint --fix --ignore-pattern .gitignore",
-      "git add"
-    ]
   }
 }
