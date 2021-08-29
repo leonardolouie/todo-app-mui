@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   root: {
-    padding: '1% 6%',
+    padding: '1% 8%',
     height: '100%'
   }
 }));

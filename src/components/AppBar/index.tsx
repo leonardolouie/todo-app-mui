@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { getCurrentDate } from 'service/utils.service'
+import { getCurrentDate } from 'service/utils.service';
 
 const useStyles = makeStyles(theme => ({
   root: {

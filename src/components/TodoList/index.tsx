@@ -10,20 +10,21 @@ import Typography from '@material-ui/core/Typography';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { Todo } from 'models/todo';
-import { formatDate } from 'service/utils.service'
-import _ from 'lodash'
-import TextField from '@material-ui/core/TextField';
+import { formatDate } from 'service/utils.service';
+import _ from 'lodash';
+import EditIcon from '@material-ui/icons/Edit';
 
 interface Props {
   todos?: Todo[];
   removeTodo: (id: number) => void;
   toggleTodo: (id: number) => void;
+  setSelectedTodo: React.Dispatch<React.SetStateAction<Todo | undefined>>;
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    height: "600px",
-    overflow: "auto",
+    height: '600px',
+    overflow: 'auto',
     '&::-webkit-scrollbar': {
       width: '0.4em'
     },
@@ -37,12 +38,17 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const TodoList: React.FC<Props> = ({ todos, removeTodo, toggleTodo }) => {
+const TodoList: React.FC<Props> = ({
+  todos,
+  removeTodo,
+  toggleTodo,
+  setSelectedTodo
+}) => {
   const classes = useStyles();
 
   return (
     <List className={classes.root}>
-      {_.orderBy(todos, 'id', 'desc')?.map((value) => {
+      {_.orderBy(todos, 'id', 'desc')?.map(value => {
         const labelId = `checkbox-list-label-${value?.id}`;
         return (
           <ListItem key={value?.id} role={undefined} dense>
@@ -73,6 +79,7 @@ const TodoList: React.FC<Props> = ({ todos, removeTodo, toggleTodo }) => {
               </Typography>
             </div>
             <ListItemSecondaryAction>
+              <EditIcon onClick={() => setSelectedTodo(value)} />
               <DeleteIcon color="error" onClick={() => removeTodo(value.id)} />
             </ListItemSecondaryAction>
           </ListItem>
