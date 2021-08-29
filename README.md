@@ -1,10 +1,6 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/c8f332be2d303d5bdac6/maintainability)](https://codeclimate.com/github/leonardolouie/todo-app-mui/maintainability)
+Deployed app link 🚀 [https://todo-mui.netlify.app/](https://todo-mui.netlify.app/)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c8f332be2d303d5bdac6/test_coverage)](https://codeclimate.com/github/leonardolouie/todo-app-mui/test_coverage)
-
-## App Deployed using Netlify 🚀
-
-Deployed app link [https://todo-mui.netlify.app/](https://todo-mui.netlify.app/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c8f332be2d303d5bdac6/maintainability)](https://codeclimate.com/github/leonardolouie/todo-app-mui/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/c8f332be2d303d5bdac6/test_coverage)](https://codeclimate.com/github/leonardolouie/todo-app-mui/test_coverage)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
