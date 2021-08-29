@@ -12,9 +12,12 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-use": "^17.2.4",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -23,8 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --check \"src/**.tsx\"",
-    "format-fix": "prettier --write \"src/**.tsx\"",
+    "format": "prettier --check \"src/**/*.tsx\"",
+    "format-fix": "prettier --write \"src/**/*.tsx\"",
     "eslint": "eslint src/ --fix --cache --ignore-pattern .gitignore"
   },
   "eslintConfig": {
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.172",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
     "eslint": "^7.32.0",

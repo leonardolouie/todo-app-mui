@@ -1,16 +1,16 @@
-import AppBar from '@material-ui/core/AppBar';
-
+import AppBar from 'components/AppBar';
 
 interface Props {
-    children: React.ReactNode
+    children: React.ReactNode;
 }
+
 const Layout: React.FC<Props> = ({ children }) => {
-
     return (
-        <AppBar >
+        <>
+            <AppBar />
             {children}
-        </AppBar>
-    )
-}
+        </>
+    );
+};
 
-export default Layout
+export default Layout;
